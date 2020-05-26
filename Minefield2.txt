@@ -1,0 +1,87 @@
+package Minefield;
+import java.util.Random;
+import java.util.Scanner;
+
+
+
+	public class Minefield2 {
+
+	public static Scanner input = new Scanner(System.in);
+	public static Random random = new Random();
+		
+	public static int rows = 0;
+	public static int cols= 0;
+	public static int mines = 0;
+	public static int rowUnit = 0;
+	public static int colUnit = 0;	
+
+	
+
+	public static String figure = "*";
+    public static String mine = "Y";
+    public static String empty = "N";
+    public static String start = "S";
+    public static String finish = "F";
+    public static String visited = "V";
+    public static String piece = "X";
+	
+	
+    public static int possibleRowStart = rows * cols;
+    public static int possibleColStart = rows * cols;
+    public static int possibleRowFinal = rows * cols;
+    public static int possibleColFinal = rows * cols;
+    public static int possibleRowMine = rows * cols;
+    public static int possibleColMine = rows * cols;
+	
+		
+    
+    public static void main(String[] args) {
+    
+   int numberStart = 1;
+   int MinePlaced = 0;
+   int numberFinish = 0;
+    
+    }
+    
+    
+    public static void legendMenu() {
+
+    	System.out.println(" S - вход в бойното поле\n" +
+    			" F - изход от минното поле\n" +
+    			" X - не посетени скрити клетки, съдържащи неизвестното\n" +
+    			" V - посетено квадратче\n" +
+    			" * - текуща позиция на бойната станция\n");
+
+    	}
+    
+    
+    public static void CheckMenu() {
+        System.out.println("1. Проба за мина\n" +
+                "2. Обезвреждане на мина\n" +
+                "3. Мини");
+    }
+    
+    
+    
+	
+    public static void GetBoard(String[] newArray) {
+        System.out.println(" ");
+        System.out.print(" ");
+        for (int row = 0; row < newArray.length; row++) {
+            System.out.print("  " + row);
+        }
+	
+	
+	
+
+	
+
+
+	
+
+
+
+		
+	
+	
+	}
